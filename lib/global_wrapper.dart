@@ -34,10 +34,22 @@ class AppTheme {
         brightness: Brightness.dark,
       ),
       textTheme: const TextTheme(
-        headlineSmall: TextStyle(fontSize: 20.0, fontFamily: 'Roboto', color: Color(0xFFE6E6E6), fontWeight: FontWeight.w700),
-        titleLarge: TextStyle(fontSize: 24.0, fontFamily: 'Roboto', color: Color(0xFFE6E6E6), fontWeight: FontWeight.w700),
+        headlineSmall: TextStyle(
+            fontSize: 20.0,
+            fontFamily: 'Roboto',
+            color: Color(0xFFE6E6E6),
+            fontWeight: FontWeight.w700),
+        titleLarge: TextStyle(
+            fontSize: 24.0,
+            fontFamily: 'Roboto',
+            color: Color(0xFFE6E6E6),
+            fontWeight: FontWeight.w700),
         bodyLarge: TextStyle(fontSize: 16.0, fontFamily: 'Roboto'),
-        bodyMedium: TextStyle(fontSize: 16.0, fontFamily: 'Roboto', color: Color(0xFFA1A1A1), fontWeight: FontWeight.w400),
+        bodyMedium: TextStyle(
+            fontSize: 16.0,
+            fontFamily: 'Roboto',
+            color: Color(0xFFA1A1A1),
+            fontWeight: FontWeight.w400),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -47,7 +59,8 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
-          textStyle: const TextStyle(fontSize: 14, fontFamily: 'Roboto',fontWeight: FontWeight.w700),
+          textStyle: const TextStyle(
+              fontSize: 14, fontFamily: 'Roboto', fontWeight: FontWeight.w700),
         ),
       ),
     );

@@ -19,8 +19,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.2)
-        ),
+            color: Theme.of(context)
+                .colorScheme
+                .primaryContainer
+                .withOpacity(0.2)),
         child: Obx(() {
           return ListView.builder(
             itemCount: reminderController.reminders.length,

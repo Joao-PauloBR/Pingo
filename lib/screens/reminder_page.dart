@@ -35,7 +35,8 @@ class ReminderPage extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'Digite o seu título',
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                   borderSide: BorderSide(color: Colors.grey, width: 1),
@@ -63,7 +64,8 @@ class ReminderPage extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'Digite uma descrição (opcional)',
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                   borderSide: BorderSide(color: Colors.grey, width: 1),

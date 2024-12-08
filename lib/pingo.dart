@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'global_wrapper.dart';
+
 import 'app_routes.dart';
+import 'global_wrapper.dart';
 
 class Pingo extends StatelessWidget {
   const Pingo({super.key});
