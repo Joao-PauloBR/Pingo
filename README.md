@@ -1,8 +1,8 @@
 # 📌 Pingo - Gerenciador de Lembretes
 
 <div align="center">
-  <img src="path/to/logo.png" alt="Pingo Logo" width="200">
-  
+  <img src="assets/img/pingo.jpg" alt="Pingo Logo" width="200">
+
   ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
   ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
   ![GitHub License](https://img.shields.io/github/license/Joao-PauloBR/pingo?style=for-the-badge)
@@ -33,9 +33,9 @@ Pingo é um aplicativo móvel intuitivo desenvolvido em Flutter para ajudar voc�
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="path/to/screenshot1.png" width="200">
-  <img src="path/to/screenshot2.png" width="200">
-  <img src="path/to/screenshot3.png" width="200">
+  <img src="assets/screenshots/screenshot1.png" width="200">
+  <img src="assets/screenshots/screenshot2.png" width="200">
+  <img src="assets/screenshots/screenshot3.png" width="200">
 </div>
 
 ## 🛠 Tecnologias
@@ -84,7 +84,7 @@ flutter run
 
 ## 🤝 Contribuição
 
-Contribuições são bem-vindas! Por favor, leia o [CONTRIBUTING.md](LINK_PARA_CONTRIBUTING) para detalhes sobre nosso código de conduta e processo de submissão de pull requests.
+Contribuições são bem-vindas! Por favor, leia o [CONTRIBUTING.md](https://github.com/Joao-PauloBR/pingo/blob/main/CONTRIBUTING.md) para detalhes sobre nosso código de conduta e processo de submissão de pull requests.
 
 ## 🛤️ Próximas Features
 
