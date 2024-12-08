@@ -7,5 +7,6 @@ class AppRoutes {
   static final routes = [
     GetPage(name: '/', page: () => HomePage()),
     GetPage(name: '/reminder', page: () => ReminderPage()),
+    GetPage(name: '/edit_reminder', page: () => ReminderPage()),
   ];
 }

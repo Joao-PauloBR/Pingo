@@ -8,14 +8,21 @@ class ReminderPage extends StatelessWidget {
   final ReminderController reminderController = Get.find();
   final TextEditingController titleController = TextEditingController();
   final TextEditingController descriptionController = TextEditingController();
+  final int? index;
 
-  ReminderPage({super.key});
+  ReminderPage({super.key, this.index}) {
+    if (index != null) {
+      final reminder = reminderController.reminders[index!];
+      titleController.text = reminder.title;
+      descriptionController.text = reminder.description;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Novo Lembrete'),
+        title: Text(index == null ? 'Novo Lembrete' : 'Editar Lembrete'),
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
@@ -36,7 +43,7 @@ class ReminderPage extends StatelessWidget {
                 hintText: 'Digite o seu título',
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
                 contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                   borderSide: BorderSide(color: Colors.grey, width: 1),
@@ -65,7 +72,7 @@ class ReminderPage extends StatelessWidget {
                 hintText: 'Digite uma descrição (opcional)',
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
                 contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                   borderSide: BorderSide(color: Colors.grey, width: 1),
@@ -106,7 +113,11 @@ class ReminderPage extends StatelessWidget {
                         title: titleController.text,
                         description: descriptionController.text,
                       );
-                      reminderController.addReminder(reminder);
+                      if (index == null) {
+                        reminderController.addReminder(reminder);
+                      } else {
+                        reminderController.updateReminder(index!, reminder);
+                      }
                       Get.back();
                     }
                   },

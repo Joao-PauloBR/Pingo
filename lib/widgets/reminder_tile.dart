@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../controllers/reminder_controller.dart';
 import '../models/reminder.dart';
+import '../screens/reminder_page.dart';
 
 class ReminderTile extends StatelessWidget {
   final Reminder reminder;
@@ -45,7 +46,7 @@ class ReminderTile extends StatelessWidget {
           ],
         ),
         onTap: () {
-          // Implementar a edição do lembrete
+          Get.to(() => ReminderPage(index: index));
         },
       ),
     );
